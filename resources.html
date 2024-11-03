@@ -9,35 +9,63 @@
 </head>
 
 <body>
-    <!-- Main Resources Layout -->
+    <!-- #############################################
+    # Main Resources Layout
+    # Explanation:
+    # This page provides resources for learning for our web dev sessions
+    # The left navbar allows users to switch between different sessions.
+    # Each section is displayed conditionally based on user selection.
+    ################################################ -->
     <div class="resources-container">
-        <!-- Left Navbar -->
+
+        <!-- #############################################
+        # Left Navbar
+        # This is the main navigation section on the left side of the page.
+        # It allows users to click through different sessions (GitHub, HTML & CSS).
+        ################################################ -->
         <nav class="left-navbar">
             <h3 class="resource_navbar_title">Topics</h3>
             <ul>
-                <li><a href="#" onclick="showSection('github')">GitHub</a></li>
-                <li><a href="#" onclick="showSection('html-css')">HTML & CSS</a></li>
-                <li class=""><a class="go_back_link" href="index.html">Go back!</a></li>
-
+                <li><a href="#" onclick="showSection('github')">Session 1: GitHub</a></li>
+                <li><a href="#" onclick="showSection('html-css')">Session 2: HTML & CSS</a></li>
             </ul>
+            <p class="go_back_link"><a class="" href="index.html">Go back!</a></p>
         </nav>
 
-        <!-- Content Container -->
+        <!-- #############################################
+        # Content Container
+        # This section contains all the main content for the sessions.
+        # Each session (for example: GitHub, HTML & CSS) is wrapped in its own <section> tag.
+        ################################################ -->
         <div class="content-container">
-            <!-- GitHub Section -->
+
+            <!-- #############################################
+            # GitHub Section
+            # This section explains the basics of GitHub and includes a list of helpful resources.
+            ################################################ -->
             <section id="github" class="section">
                 <h2>GitHub Basics</h2>
                 <p>Learn how to create a GitHub account, clone repositories, make commits, and more.</p>
-                <ul>
-                    <li><a href="https://github.com/">Create a GitHub account</a></li>
-                    <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git</a></li>
-                    <li><a href="https://guides.github.com/activities/hello-world/">First GitHub repository</a></li>
-                    <li><a href="https://git-scm.com/docs/git-clone">Cloning repositories</a></li>
-                    <li><a href="https://git-scm.com/docs/git-commit">Making commits</a></li>
-                </ul>
+
+                <h3>Steps to Get Started:</h3>
+                <ol>
+                    <li><code>Step 1:</code> <a href="https://github.com/">Create a GitHub account</a></li>
+                    <li><code>Step 2:</code> <a
+                            href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git on your
+                            system</a></li>
+                    <li><code>Step 3:</code> <a href="https://guides.github.com/activities/hello-world/">Create your
+                            first GitHub repository</a></li>
+                    <li><code>Step 4:</code> <a href="https://git-scm.com/docs/git-clone">Clone a repository using
+                            Git</a></li>
+                    <li><code>Step 5:</code> <a href="https://git-scm.com/docs/git-commit">Make your first commit</a>
+                    </li>
+                </ol>
             </section>
 
-            <!-- HTML & CSS Section -->
+            <!-- #############################################
+            # HTML & CSS Section
+            # This section explains the basics of HTML and CSS and how they work together.
+            ################################################ -->
             <section id="html-css" class="section">
                 <h2>HTML & CSS Basics</h2>
                 <p>Understand the differences between HTML & CSS and how they work together to build websites.</p>
@@ -70,10 +98,14 @@ p {
 }
                 </code></pre>
             </section>
+
         </div>
     </div>
 
-    <!-- Link to external JavaScript file -->
+    <!-- #############################################
+    # Link to external JavaScript file
+    # The JavaScript file (resources.js) handles showing/hiding the content sections.
+    ################################################ -->
     <script src="js/resources.js"></script>
 </body>
 
